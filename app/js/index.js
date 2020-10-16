@@ -102,6 +102,7 @@ log("James Bond".startsWith("James"));
 // Loops
 header("Loops");
 
+// Fors
 for (var i = 0;  i < 10; i++) {
     log(i);
 }
@@ -116,3 +117,18 @@ for (var i = 0; i <= persons.length; i++) {
     log(persons[i].age);
     log("--------------------")
 }
+
+// Whiles
+while(true) {
+    log("while")
+}
+
+log("_________________________________________________")
+
+var number = 0;
+
+while(number < 5) {
+    log(number);
+    number += 1
+}
+
