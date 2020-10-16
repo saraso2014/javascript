@@ -2,10 +2,10 @@
 require('styles/main.scss');
 /* js */
 import $ from 'jquery';
-import { log, logTitle } from 'logger';
+import { log, logTitle, header } from 'logger';
 /* your imports */
 
-logTitle('Variables')
+logTitle('JavaScript for Beginners')
 /* Variables */
 var name = "Maria Jones";
 var age = 21;
@@ -54,3 +54,65 @@ for (var n of names) {
 names.forEach(function(n, index) {
     log(index + " - " + n);
 })
+
+// Arithmetic Operators
+log("Arithmetic Operators");
+
+var addition = 2 + 2;
+var sub = 3 - 90;
+var division = 10 / 5;
+var multiplication = 3 * 30;
+var remainder = 5 % 2;
+
+log(addition);
+log(sub);
+log(division);
+log(multiplication);
+log(remainder);
+
+// Functions
+header("Functions");
+
+function addNumbers(n1, n2) {
+    // Start of method (body)
+    // Define logic
+    var result = n1 + n2;
+    return result;
+    // End function
+};
+
+var result = addNumbers(10,2);
+log(result);
+
+// More functions
+header("More Functions");
+
+var person = {name: "Anna", age: 20};
+log(Object.values(person));
+log(Object.keys({name: "Anna", age}));
+
+// Strings
+header("String Methods");
+
+log("James Bond".toLocaleLowerCase());
+log("James Bond".toUpperCase());
+log("James Bond".endsWith("Bond"));
+log("James Bond".startsWith("James"));
+
+// Loops
+header("Loops");
+
+for (var i = 0;  i < 10; i++) {
+    log(i);
+}
+
+var persons = [
+    { name: "Alex", age: 22 },
+    { name: "Maria", age: 30 }
+];
+
+for (var i = 0; i <= persons.length; i++) {
+    log(persons[i].name);
+    log(persons[i].age);
+    log("--------------------")
+}

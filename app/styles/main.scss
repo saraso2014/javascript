@@ -1,12 +1,18 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../../node_modules/font-awesome/css/font-awesome.min.css";
 
-body{
+body {
   margin-top: 40px;
   background-color:#fff;
 }
 
-#content{
-  font-size: 1.4em;
+#content {
+  font-size: 1em;
   color: gray;
+}
+
+#header {
+  font-size: 1em;
+  color: gray;
+  padding-top: 3em;
 }
