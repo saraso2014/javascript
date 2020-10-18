@@ -116,16 +116,17 @@ for (var i = 0; i <= persons.length; i++) {
     log(persons[i].name);
     log(persons[i].age);
     log("--------------------")
-}
+};
+
+var persons = [
+    { name: "Alex", age: 22 },
+    { name: "Maria", age: 30 }
+];
 
 // Whiles
 while(true) {
     log("while")
-}
-
-log("_________________________________________________")
-
-var number = 0;
+};
 
 while(number < 5) {
     log(number);
