@@ -154,3 +154,68 @@ do {
     i ++;
     log(i)
 } while(i < 5);
+
+//Breaks and Continues
+var number = 0;
+
+while(number < 5) {
+    log(number);
+
+    if (number == 2) {
+        break;
+    }
+    number ++;
+
+
+}
+
+
+while(number < 5) {
+    number ++;
+
+    if (number < 5) {
+        continue;
+    }
+
+    log(number);
+
+    logTitle('JavaScript for Beginners');
+    log("If");
+    
+    var person = {
+        name: "Anna",
+        age: 16
+    }
+    
+    
+    if (person.age >= 18) {
+        log(person.name + " is an adult")
+    } else if (person.age == 16) {
+        log(person.name + " is about to be an adult")
+    } else {
+        log(person.name + "  not an adult")
+    }
+
+    var person = {
+        name: "Anna",
+        age: 17
+    }
+    
+    switch(true) {
+        case (person.age == 17):
+            log(person.name + " is about to be an adult");
+            break;
+            case (person.age >= 18):
+            log(person.name + " is an adult");
+            break;
+        default:
+            log(person.name + " is not an adult");
+    };
+    
+    switch (new Date().getDay) {
+        case 0:
+            log("Saturday");
+            break;
+        default:
+            log("I don't know")
+    }
